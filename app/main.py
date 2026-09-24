@@ -1,7 +1,8 @@
 import os
 import shutil
 
-def move_file(command):
+
+def move_file(command: str) -> None:
     parts = command.split()
     source = parts[1]
     dest = parts[2]
@@ -17,3 +18,4 @@ def move_file(command):
 
     # Move the file (copies and removes original)
     shutil.move(source, dest)
+
