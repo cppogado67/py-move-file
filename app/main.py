@@ -18,4 +18,3 @@ def move_file(command: str) -> None:
 
     # Move the file (copies and removes original)
     shutil.move(source, dest)
-
